@@ -25,8 +25,8 @@ class PastQuestionController extends Controller
         $request->validate([
             'course_id' => 'required|exists:courses,id',
             'year' => 'required|integer|min:1900|max:' . date('Y'),
-            'file' => 'required|file|mimes:pdf|max:2048',
-            'image' => 'required|file|mimes:png,jpg,jpeg|max:2048',
+            'file' => 'required|file|mimes:pdf',
+            'image' => 'required|file|mimes:png,jpg,jpeg',
         ]);
 
         $filePath = $request->file('file')->store('past_questions');
