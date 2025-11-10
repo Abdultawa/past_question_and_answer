@@ -13,7 +13,7 @@
         <script src="https://cdn.tailwindcss.com"></script>
 
         <!-- Scripts -->
-        @vite(['resources/css/app.css', 'resources/js/app.js'])
+        {{-- @vite(['resources/css/app.css', 'resources/js/app.js']) --}}
 
         <link rel="stylesheet" href="resources/css/app.css">
         <script src="resources/js/app.js"></script>
